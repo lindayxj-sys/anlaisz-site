@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: lindayxj-sys/anlaisz-site
+  branch: main
+  base_url: https://www.anlaisz.com
+  auth_endpoint: /api/auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "页面内容"
+    files:
+      - name: "home"
+        label: "首页"
+        file: "index.html"
+        fields:
+          - { label: "品牌名", name: "brand", widget: "string" }
+          - { label: "首页大标题", name: "hero_title", widget: "string" }
+          - { label: "首页副标题", name: "hero_subtitle", widget: "text" }
