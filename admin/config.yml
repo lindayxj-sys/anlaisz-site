@@ -2,8 +2,7 @@ backend:
   name: github
   repo: lindayxj-sys/anlaisz-site
   branch: main
-  base_url: https://www.anlaisz.com
-  auth_endpoint: /api/auth
+  auth_type: token
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
