@@ -26,4 +26,3 @@ collections:
           - { label: "About Text", name: "about_text", widget: "text" }
           - { label: "Contact Subtitle", name: "contact_subtitle", widget: "string" }
           - { label: "Footer Text", name: "footer_text", widget: "string" }
-
