@@ -2,19 +2,28 @@ backend:
   name: github
   repo: lindayxj-sys/anlaisz-site
   branch: main
-  auth_type: token
+  base_url: https://www.anlaisz.com
+  auth_endpoint: api/auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "页面内容"
+  - name: "settings"
+    label: "Site Settings"
     files:
-      - name: "home"
-        label: "首页"
-        file: "index.html"
+      - name: "site"
+        label: "Company Info"
+        file: "content/settings/site.json"
         fields:
-          - { label: "品牌名", name: "brand", widget: "string" }
-          - { label: "首页大标题", name: "hero_title", widget: "string" }
-          - { label: "首页副标题", name: "hero_subtitle", widget: "text" }
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Brand Highlight", name: "brand_highlight", widget: "string" }
+          - { label: "Company Name", name: "company_name", widget: "string" }
+          - { label: "Homepage Big Title", name: "tagline", widget: "string" }
+          - { label: "Homepage Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Button Text", name: "hero_button_text", widget: "string" }
+          - { label: "Products Subtitle", name: "products_subtitle", widget: "string" }
+          - { label: "About Text", name: "about_text", widget: "text" }
+          - { label: "Contact Subtitle", name: "contact_subtitle", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
+
